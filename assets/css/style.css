@@ -330,6 +330,7 @@ div.circleBehind a:hover:after {
 
 .about-me p {
     font-size: 18px;
+    text-align: justify;
 }
 
 .point:before {
@@ -345,16 +346,17 @@ div.circleBehind a:hover:after {
 }
 
 .lugar-fecha {
+    padding: 10px 0px;
     font-size: 18px;
 }
 
 .lugar-fecha span {
     font-size: 15px;
-
     color: #8DF4EA;
 }
 
 .institucion {
+    padding: 10px 0px;
     font-size: 18px;
     font-weight: 500;
 }
@@ -367,6 +369,7 @@ div.circleBehind a:hover:after {
 }
 
 .nombre {
+    padding: 10px 0px;
     font-size: 18px;
 }
 
@@ -392,6 +395,10 @@ div.circleBehind a:hover:after {
     display: flex;
     align-items: end;
     animation: slide-left .3s linear both
+}
+
+.profile-photo-movil {
+    display: none;
 }
 
 .profile-photo {
