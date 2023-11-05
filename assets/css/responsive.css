@@ -180,15 +180,24 @@
 
 /* Para dispositivos con un ancho de pantalla entre 769px y 992px (pantallas más grandes en modo retrato y tablets en modo paisaje) */
 @media (min-width: 769px) and (max-width: 992px) {
+    .profile-photo-movil {
+        display: none;
+    }
     /* Estilos para pantallas medianas aquí */
 }
 
 /* Para dispositivos con un ancho de pantalla entre 993px y 1200px (pantallas de escritorio) */
 @media (min-width: 993px) and (max-width: 1200px) {
+    .profile-photo-movil {
+        display: none;
+    }
     /* Estilos para pantallas grandes aquí */
 }
 
 /* Para dispositivos con un ancho de pantalla mayor de 1200px (pantallas de escritorio más grandes) */
 @media (min-width: 1201px) {
+    .profile-photo-movil {
+        display: none;
+    }
     /* Estilos para pantallas extra grandes aquí */
 }
