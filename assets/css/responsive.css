@@ -1,5 +1,11 @@
 /* Para dispositivos con un ancho de pantalla de hasta 576px (generalmente, teléfonos móviles en modo retrato) */
 @media (max-width: 576px) {
+    p {
+        font-size: 12px;
+    }
+    .p-3{
+        padding: 0 !important;
+    }
 
     /* Estilos para pantallas pequeñas aquí */
     .aside-morado {
@@ -15,11 +21,11 @@
         right: 0 !important;
         display: flex;
         position: fixed;
-        top: 10%;
+        top: 5%;
     }
 
     .profile-photo-movil img {
-        width: 200px;
+        width: 150px;
         margin: 0px auto;
         border: solid 10px #260852;
         border-radius: 100%;
@@ -40,7 +46,7 @@
     }
 
     nav a {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .navbar-native {
@@ -53,29 +59,45 @@
     }
 
     .where_Im {
-        top: 3%;
+        top: 0;
         bottom: unset;
+        font-size: 20px;
+        animation: blur-in-expand 0.4s both;
+    }
+
+    .icon,
+    .parpadeo {
+        font-size: 20px;
     }
 
     .about,
     .education,
     .skills,
     .experience {
-        position: static;
-        margin: 42% 3% 0%;
-        height: 515px;
+        top: 30%;
+        left: 0;
+        position: fixed;
+        margin: 0 5%;
+        height: 56%;
         width: -webkit-fill-available;
         overflow-y: scroll;
-        overflow-x: hidden;
+        overflow-x: hidden
+    }
+
+    .point:before {
+        width: 10px;
+        height: 10px;
     }
 
     .about-me p {
-        font-size: 15px;
+        font-size: 12px;
+        padding: 0 15px;
     }
 
     .about h1 {
-        font-size: 28px;
- 
+        text-align: center;
+        font-size: 25px;
+
     }
 
     .about h3 {
@@ -84,25 +106,38 @@
     }
 
     .personal-contact {
-        font-size: 15px;
-    }
-    .lugar-fecha { 
-        font-size: 13px;
+        padding: 0;
+        font-size: 14px;
     }
 
-    .lugar-fecha span { 
+    .personal-contact img {
+        width: 35px;
+    }
+
+    .lugar-fecha {
         font-size: 12px;
     }
 
-    .institucion, .nombre {
-        font-size: 15px;
+    .lugar-fecha span {
+        font-size: 10px;
+    }
+
+    .institucion,
+    .nombre {
+        font-size: 12px;
+    }
+
+    .institucion span, .nombre span {
+        font-size: 12px;
     }
 
     .institucion span {
         font-size: 12px;
     }
-    .idioma, .idioma span {
-        font-size: 15px;
+
+    .idioma,
+    .idioma span {
+        font-size: 12px;
     }
 
     .contenedor-bloque {
@@ -112,13 +147,25 @@
     }
 
     .contenido-item img {
-        width: 35px;
+        width: 30px;
     }
 
     .contenido-item h5 {
-        font-size: 14px;
+        font-size: 12px;
+        padding-top: 10px;
     }
 
+    .element-experience {
+        font-size: 15px;
+    }
+
+    .element-experience h5 {
+        font-size: 16px;
+    }
+
+    .element-experience strong{
+        font-size: 12px;
+    }
 
 }
 
