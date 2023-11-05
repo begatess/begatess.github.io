@@ -1,0 +1,147 @@
+/* Para dispositivos con un ancho de pantalla de hasta 576px (generalmente, teléfonos móviles en modo retrato) */
+@media (max-width: 576px) {
+
+    /* Estilos para pantallas pequeñas aquí */
+    .aside-morado {
+        display: none;
+    }
+
+    .profile-photo {
+        display: none;
+    }
+
+    .profile-photo-movil {
+        width: -webkit-fill-available !important;
+        right: 0 !important;
+        display: flex;
+        position: fixed;
+        top: 10%;
+    }
+
+    .profile-photo-movil img {
+        width: 200px;
+        margin: 0px auto;
+        border: solid 10px #260852;
+        border-radius: 100%;
+    }
+
+    .slider-label {
+        margin: 92% 6% 0px;
+        position: absolute;
+    }
+
+    .navbar-nav {
+        display: inline-flex !important;
+        flex-direction: row !important;
+    }
+
+    .nav-link {
+        margin: 0px 4px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .navbar-native {
+        padding: 0 !important;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        display: none;
+    }
+
+    .where_Im {
+        top: 3%;
+        bottom: unset;
+    }
+
+    .about,
+    .education,
+    .skills,
+    .experience {
+        position: static;
+        margin: 42% 3% 0%;
+        height: 515px;
+        width: -webkit-fill-available;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .about-me p {
+        font-size: 15px;
+    }
+
+    .about h1 {
+        font-size: 28px;
+ 
+    }
+
+    .about h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .personal-contact {
+        font-size: 15px;
+    }
+    .lugar-fecha { 
+        font-size: 13px;
+    }
+
+    .lugar-fecha span { 
+        font-size: 12px;
+    }
+
+    .institucion, .nombre {
+        font-size: 15px;
+    }
+
+    .institucion span {
+        font-size: 12px;
+    }
+    .idioma, .idioma span {
+        font-size: 15px;
+    }
+
+    .contenedor-bloque {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    .contenido-item img {
+        width: 35px;
+    }
+
+    .contenido-item h5 {
+        font-size: 14px;
+    }
+
+
+}
+
+/* Para dispositivos con un ancho de pantalla entre 577px y 768px (generalmente, tablets y pantallas más grandes en modo retrato) */
+@media (min-width: 577px) and (max-width: 768px) {
+
+    /* Estilos para tablets aquí */
+    .aside-morado {
+        display: none;
+    }
+}
+
+/* Para dispositivos con un ancho de pantalla entre 769px y 992px (pantallas más grandes en modo retrato y tablets en modo paisaje) */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Estilos para pantallas medianas aquí */
+}
+
+/* Para dispositivos con un ancho de pantalla entre 993px y 1200px (pantallas de escritorio) */
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Estilos para pantallas grandes aquí */
+}
+
+/* Para dispositivos con un ancho de pantalla mayor de 1200px (pantallas de escritorio más grandes) */
+@media (min-width: 1201px) {
+    /* Estilos para pantallas extra grandes aquí */
+}
