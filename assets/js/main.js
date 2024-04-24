@@ -60,7 +60,6 @@ function select_nav(wanna_actived) {
 }
 
 function select_section(section_) {
-
     $('section').each(function () {
         $(this).hide();
     });
@@ -68,14 +67,14 @@ function select_section(section_) {
 
     // Reacomoda la barra morada y la foto de perfil
     $('.aside-morado').animate({
-        width: 900
+        width: '55%'
     }, 500);
     $('.profile-photo').animate({
-        right: 950,
+        left: '10%',
         top: '15%'
     }, 500);
     $('.profile-photo img').animate({
-        width: 500
+        width: '30%'
     }, 500);
 
     $(section_).show();
@@ -100,32 +99,32 @@ function select_section(section_) {
 }
 
 /* Funcion de transicion entre secciones */
-$(document).ready(function () {
-    $('#home_b').click(function () {
-        select_nav('#home_b');
-        $('.where_Im').hide();
-        $('#about').hide();
-        $('#education').hide();
-        $('#skills').hide();
-        $('#experience').hide();
+// $(document).ready(function () {
+//     $('#home_b').click(function () {
+//         select_nav('#home_b');
+//         $('.where_Im').hide();
+//         $('#about').hide();
+//         $('#education').hide();
+//         $('#skills').hide();
+//         $('#experience').hide();
 
-        $('#home').animate({
-            opacity: 1
-        }, 500, function () {   
-            $(this).show(); // Una vez que se complete la animación, oculta el elemento.
-        });
-        $('.aside-morado').animate({
-            width: 300
-        }, 500);
-        $('.profile-photo').animate({
-            right: 20,
-            top: '10%'
-        }, 500);
-        $('.profile-photo img').animate({
-            width: 600
-        }, 500);
-    });
-});
+//         $('#home').animate({
+//             opacity: 1
+//         }, 500, function () {   
+//             $(this).show();
+//         });
+//         $('.aside-morado').animate({
+//             width: 300
+//         }, 500);
+//         $('.profile-photo').animate({
+//             right: 20,
+//             top: '10%'
+//         }, 500);
+//         $('.profile-photo img').animate({
+//             width: 600
+//         }, 500);
+//     });
+// });
 
 //** Animacion Skills */
 $(".contenedor-bloque").hover(function(){

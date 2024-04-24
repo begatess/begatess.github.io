@@ -1,5 +1,8 @@
 /* Para dispositivos con un ancho de pantalla de hasta 576px (generalmente, teléfonos móviles en modo retrato) */
 @media (max-width: 576px) {
+    p {
+        
+    }
     .p-3{
         padding: 0 !important;
     }
@@ -18,7 +21,7 @@
         right: 0 !important;
         display: flex;
         position: fixed;
-        top: 5%;
+        top: 10%;
     }
 
     .profile-photo-movil img {
@@ -112,11 +115,11 @@
     }
 
     .lugar-fecha {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .lugar-fecha span {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .institucion,
@@ -124,8 +127,12 @@
         font-size: 15px;
     }
 
+    .institucion span, .nombre span {
+        font-size: 15px;
+    }
+
     .institucion span {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .idioma,
@@ -148,7 +155,20 @@
         padding-top: 10px;
     }
 
+    .element-experience {
+        font-size: 15px;
+    }
 
+    .element-experience h5 {
+        font-size: 16px;
+    }
+
+    .element-experience strong{
+        font-size: 12px;
+    }
+    .cursos {
+        padding: 0 20px;
+    }
 }
 
 /* Para dispositivos con un ancho de pantalla entre 577px y 768px (generalmente, tablets y pantallas más grandes en modo retrato) */
@@ -161,16 +181,90 @@
 }
 
 /* Para dispositivos con un ancho de pantalla entre 769px y 992px (pantallas más grandes en modo retrato y tablets en modo paisaje) */
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .profile-photo-movil {
+        display: none;
+    }
+    .profile-photo img {
+        width: 500px;
+    }
+    .navbar-nav .nav-link {
+        font-size: 20px;
+    }
+    p{
+        font-size: 16px !important;
+    }
+    h1 {
+        font-size: 30px !important;
+    }
+    h4 {
+        font-size: 18px;
+    }
     /* Estilos para pantallas medianas aquí */
 }
 
 /* Para dispositivos con un ancho de pantalla entre 993px y 1200px (pantallas de escritorio) */
-@media (min-width: 993px) and (max-width: 1200px) {
-    /* Estilos para pantallas grandes aquí */
+@media (min-width: 1025) and (max-width: 1920px) {
+    .navbar-nav .nav-link, .where_Im {
+        font-size: 22px;
+    }
+    .profile-photo-movil {
+        display: none;
+    }
+    .profile-photo img {
+        width: 600px;
+    }
+    .about h1 {
+        font-size: 30px;
+    }
+    .about h3 {
+        font-size: 20px;
+        padding: 0;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+    h4 {
+        font-size: 18px !important;
+    }
+    .personal-contact , .about-me p{
+        font-size: 15px ;
+    }
+    .about {
+        padding: 1% 2% 0px;
+    }
+    .about p {
+        margin: 10px 0px;
+    }
+    .institucion,.lugar-fecha, .nombre, .idioma {
+        font-size: 16px;
+    } 
+    .element-experience {
+        margin: 10px 20px;
+    }
+    h5 {
+        font-size: 16px !important;
+        margin-bottom: 0 !important;
+    }
+    .skills p {
+        font-size: 15px;
+        margin-bottom: 2px;
+    }
+    .skills h4 {
+        margin-bottom: 8px !important;
+    }
 }
 
 /* Para dispositivos con un ancho de pantalla mayor de 1200px (pantallas de escritorio más grandes) */
-@media (min-width: 1201px) {
+@media (min-width: 1921px) {
+    .profile-photo-movil {
+        display: none;
+    }
+    .profile-photo img {
+        width: 620px;
+    }
+    .aside-morado {
+        width: 400px;
+    }
     /* Estilos para pantallas extra grandes aquí */
 }
