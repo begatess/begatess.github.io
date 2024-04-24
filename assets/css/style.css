@@ -345,6 +345,7 @@ div.circleBehind a:hover:after {
 .about-me p {
     font-size: 18px;
     text-align: justify;
+    text-align: justify;
 }
 
 .point:before {
@@ -361,6 +362,7 @@ div.circleBehind a:hover:after {
 
 .lugar-fecha {
     padding: 10px 0px;
+    padding: 10px 0px;
     font-size: 18px;
 }
 
@@ -370,6 +372,7 @@ div.circleBehind a:hover:after {
 }
 
 .institucion {
+    padding: 10px 0px;
     padding: 10px 0px;
     font-size: 18px;
     font-weight: 500;
@@ -383,6 +386,7 @@ div.circleBehind a:hover:after {
 }
 
 .nombre {
+    padding: 10px 0px;
     padding: 10px 0px;
     font-size: 18px;
 }
@@ -409,6 +413,10 @@ div.circleBehind a:hover:after {
     display: flex;
     align-items: end;
     animation: slide-left .3s linear both
+}
+
+.profile-photo-movil {
+    display: none;
 }
 
 .profile-photo-movil {
@@ -475,6 +483,57 @@ div.circleBehind a:hover:after {
     }
 }
 
+.tarjeta-sitio{
+    width: 100%;
+}
+.tarjeta-sitio:hover{
+    padding: 10px;
+    background-color: #260852;
+    border: solid 1px #8DF4EA;
+}
+
+.tarjeta-sitio img{
+    width: 100%;
+}
+
+.tarjeta-sitio-contenido {
+    text-transform: uppercase;
+    padding: 10%;
+    color: #8DF4EA;
+    height: 100px;
+    background-color: #260852;
+    border-radius: 0 0 10px 10px;
+}
+
+.nombre-sitio {
+    font-weight: 500;
+}
+
+.scroll-area {
+    width: 300px; /* Ancho deseado */
+    height: 70vh; /* Altura deseada */
+    overflow: auto; /* Agrega barras de desplazamiento cuando sea necesario */
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #B945EE;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8DF4EA;
+  }
 .tarjeta-sitio{
     width: 100%;
 }

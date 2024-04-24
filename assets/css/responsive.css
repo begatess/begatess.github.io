@@ -21,10 +21,11 @@
         right: 0 !important;
         display: flex;
         position: fixed;
-        top: 10%;
+        top: 5%;
     }
 
     .profile-photo-movil img {
+        width: 150px;
         width: 150px;
         margin: 0px auto;
         border: solid 10px #260852;
@@ -47,6 +48,7 @@
 
     nav a {
         font-size: 15px;
+        font-size: 15px;
     }
 
     .navbar-native {
@@ -60,7 +62,15 @@
 
     .where_Im {
         top: 0;
+        top: 0;
         bottom: unset;
+        font-size: 20px;
+        animation: blur-in-expand 0.4s both;
+    }
+
+    .icon,
+    .parpadeo {
+        font-size: 20px;
         font-size: 20px;
         animation: blur-in-expand 0.4s both;
     }
@@ -79,8 +89,19 @@
         position: fixed;
         margin: 0 5%;
         height: 56%;
+        top: 30%;
+        left: 0;
+        position: fixed;
+        margin: 0 5%;
+        height: 56%;
         width: -webkit-fill-available;
         overflow-y: scroll;
+        overflow-x: hidden
+    }
+
+    .point:before {
+        width: 10px;
+        height: 10px;
         overflow-x: hidden
     }
 
@@ -95,6 +116,9 @@
     }
 
     .about h1 {
+        text-align: center;
+        font-size: 25px;
+
         text-align: center;
         font-size: 25px;
 
@@ -148,9 +172,20 @@
 
     .contenido-item img {
         width: 30px;
+        width: 30px;
     }
 
     .contenido-item h5 {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+
+    .element-experience {
+        font-size: 15px;
+    }
+
+    .element-experience h5 {
+        font-size: 16px;
         font-size: 12px;
         padding-top: 10px;
     }
